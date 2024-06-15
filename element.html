@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="ele.css" rel="stylesheet"/>
+    <script src="ele.js" defer></script>
+</head>
+<body>
+    <!-- <h1 style="display: flex;justify-content: center;text-align: center;color: hotpink;font-weight: bolder;">How to create tag dynamically</h1> -->
+    <!-- <div id="heading"></div>
+    <button onclick="create()">Click</button>
+    <button onclick="multiple()">Multiple</button> -->
+    <div id="container">
+        <div id="sidenav">
+            <div id="card">
+            <h1>Element Creator</h1>
+            <form onsubmit="ElementCreator(event)" name="element-form">
+                <select name="element">
+                    <option value="h1">Heading Tag</option>
+                    <option value="p">Paragraph Tag</option>
+                    <option value="div">div Tag</option>
+                    <option value="button">Button Tag</option>
+                    <option value="marquee">Marquee Tag</option>
+                    <option value="mark">Mark Tag</option>
+                </select>
+                <input name="text" placeholder="Enter your text" required="true" style="color: dodgerblue;"/>
+                <button>Create</button>
+
+            </form>
+        </div>
+        <div id="animation-card">
+            <h1>Animator</h1>
+           
+                <select id="animator">
+                    <option value="animate__animated animate__bounce">Bounce</option>
+                    <option value="animate__animated animate__zoomIn">Zoom In</option>
+                    <option value="animate__animated animate__zoomInDown">Zoom Down</option>
+                    <option value="animate__animated animate__zoomInUp">Zoom InUp</option>
+                    
+                  
+                </select>
+        </div>
+        </div>
+        <div id="section">
+            <div>
+                <h1 style="display: flex;justify-content: center;text-align: center;color: hotpink;font-weight: bolder;"></h1>
+                <div id="result"></div>
+            </div>
+          <h1 style="display: flex;justify-content: center;text-align: center;color: hotpink;font-weight: bolder; padding-left: 750px;text-decoration: underline;">dynamically Element Selector App</h1>
+        </div>
+    </div>
+</body>
+</html>

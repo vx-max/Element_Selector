@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body{
+padding: 0;
+margin: 0;
+
+}
+#container{
+    height: 100vh;
+    /* background-color: #e9e9e9;
+    background-image: linear-gradient(180deg, #e9e9e9 0%, #6d606d 97%, #f3f3f0 100%); */
+    
+
+}
+#sidenav{
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    padding: 15px;
+    background-color: #4158D0;
+background-image: linear-gradient(180deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+#section{
+    width: calc(100% - 350px);
+   height: 100vh;
+   /* background-color:  antiquewhite; */
+   margin-left: 350px;
+   display: flex;
+    
+}
+#card,#animation-card{
+    display: flex;
+    flex-direction: column;
+
+}
+#card h1,#animation-card h1{
+    font-family: sans-serif;
+    color: white;
+}
+#card form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+#card form select,#card form input,#card form button,#animation-card select{
+    padding: 10px;
+    border: none;
+  
+}
+
+#card form button{
+    width:fit-content;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(73, 153, 233);
+}
+#card form button:hover{
+    width:fit-content;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 4px;
+    color: white;
+   background-color: #4158D0;
+}
+#animation-card{
+    display: none;
+}
